@@ -45,6 +45,10 @@ export default {
 .left-section {
     width: 20%;
     max-width: 300px;
+    height: calc(100vh - 13.5rem);
+    overflow: auto;
+    border-right: 0.1rem solid var(--border);
+    padding-right: 1.5rem;
 }
 
 .left-section a {

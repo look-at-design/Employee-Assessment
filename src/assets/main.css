@@ -969,10 +969,7 @@ header {
   .rs-card:hover {
     box-shadow: rgb(17 12 46 / 15%) 0px 0px 40px 0px;
   }
-  
-  .rs-card-head {
-    position: relative;
-  }
+
   
   .rs-card-head .heading-medium {
     margin-bottom: 0;
@@ -996,7 +993,10 @@ header {
   
   .rs-card-head {
     box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
-  }
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
   
   [class*="rs-card-"] {
     padding: 1.5rem;
@@ -1964,7 +1964,7 @@ header {
   }
   html {
     /* -------- COLOR ------- */
-    --primary: #1e2038;
+    --primary: var(--headerBg);
     --secondary: #e9ecef;
   }
   html.red {
@@ -1985,4 +1985,18 @@ header {
 }
 .text-right {
   text-align: right;
+}
+.text-light {
+  color: var(--light);
+}
+.bg-primary {
+  background: var(--primary);
+}
+.d-grid-4 {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  grid-gap: 1.5rem;
+}
+.heading-display-large {
+  font-size: 3.5rem;
 }
