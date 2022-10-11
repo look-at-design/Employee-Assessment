@@ -1,7 +1,7 @@
 <template>
     <section class="home">
         <div class="left-section">
-            <router-link to="/home/individual">
+            <router-link to="/">
                 <fa :icon="['far', 'user']" /> individual</router-link>
             <router-link to="/home/team">
                 <fa :icon="['fas', 'people-group']" /> team</router-link>

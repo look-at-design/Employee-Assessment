@@ -7,7 +7,7 @@
                 <img alt="Vue logo" class="logo" src="../assets/logo.svg" width="50" height="50" />
             </div>
             <div class="rs-col-4 tab-menu">
-                <router-link to="/home/individual">
+                <router-link to="/">
                     <fa :icon="['fas', 'bullseye']" /> 
                     Goals
                 </router-link>
