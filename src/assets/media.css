@@ -1,0 +1,167 @@
+@media (max-width: 768px) {
+  .tab-menu a {
+    padding: 1rem;
+}
+  main {
+    padding-top: 5rem !important;
+  }
+  /* footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+} */
+  .left-drawer .drawers .rs-drawer {
+    display: none;
+    position: absolute;
+    height: 100vh;
+    box-shadow: 2px 0px 6px rgb(0 0 0 / 20%);
+  }
+  .icon-list {
+    display: block !important;
+  }
+  .menu-item.active {
+    border: none;
+    padding: 0;
+    font-weight: var(--font-medium);
+  }
+
+  .menu-item {
+    line-height: 3rem;
+  }
+
+  .rs-row {
+    display: block;
+  }
+
+  [class*='rs-col-'] {
+    width: 100%;
+  }
+
+  .rs-modal {
+    width: 90%;
+  }
+
+  .split .rs-modal-inner {
+    width: 100%;
+  }
+
+  .table-sticky th:last-child::before,
+  .table-sticky td:last-child::before {
+    box-shadow: -13px 0 12px -11px #e2e2e2 inset;
+    content: " ";
+    height: 100%;
+    top: 0;
+    left: -15px;
+    position: absolute;
+    width: 15px;
+  }
+
+  .menu-wrapper {
+    display: none;
+    width: 100%;
+    position: fixed;
+    top: 8.8rem;
+    left: 0;
+    right: 0;
+    background: var(--primary);
+    padding: 1.5rem;
+    animation: menu-skew 300ms ease-in-out alternate;
+}
+@keyframes menu-skew {
+  from {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+  .menu-wrapper ul {
+    display: block;
+  }
+
+  .menu-wrapper ul li {
+    font-size: 85%;
+    margin: 0;
+  }
+
+  .main-section-wrapper {
+    flex-wrap: wrap;
+    position: relative;
+  }
+  .logo-wrapper {
+    width: 50%;
+    display: flex;
+    /* margin: 0 auto; */
+    max-height: 7rem;
+    height: auto;
+    aspect-ratio: 43/10;
+    justify-content: center;
+}
+.tab-menu {
+  position: absolute;
+  top: 6rem;
+  left: -1rem;
+  background: var(--light) !important;
+  overflow-x: auto;
+  width: calc(100% + 2rem ) !important;
+  box-shadow: 0px 9px 10px rgb(215 214 215 / 50%) !important;
+}
+  /* uncomment the below css for first column */
+  /* .table-sticky th:first-child::after, .table-sticky td:first-child::after {
+        box-shadow: 13px 0 12px -11px #e2e2e2 inset;
+        content: " ";
+        height: 100%;
+        top: 0;
+        right: -15px;
+        position: absolute;
+        width: 15px;
+    } */
+}
+
+@media (max-width: 360px) {
+  /* .rs-modal-inner {
+    max-height: 46rem !important;
+  } */
+}
+
+@media (max-width: 576px) {
+  .rs-row {
+    display: block;
+  }
+}
+
+@media (min-width: 769px) {
+  .tab-menu{
+    gap: 4rem;
+    justify-content: center;
+  }
+  .left-drawer .drawers .rs-drawer {
+    display: block;
+  }
+  .rs-menu-toggle {
+    display: none;
+  }
+
+}
+
+@media (max-width: 992px) {
+  /* .left-drawer .drawers .rs-drawer {
+    display: none;
+    position: absolute;
+    height: 100vh;
+    box-shadow: 2px 0px 6px rgb(0 0 0 / 20%);
+  } */
+}
+
+@media (min-width: 993px) {
+  /* .left-drawer .drawers .rs-drawer {
+    display: block;
+  } */
+
+  .left-drawer .drawers .rs-drawer .rs-drawer-body {
+    height: calc(100vh - 13.8rem);
+  }
+}
