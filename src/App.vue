@@ -13,7 +13,7 @@
     <div class="rs-drawer-inner">
       <div class="rs-drawer-head">
         <div class="heading-medium">drawer header</div>
-        <div class="icon icon-close rounded" >
+        <div class="icon icon-close rounded" @click="closeRightDrawer()">
           <fa :icon="['fas', 'close']" style="color: #000"/>
         </div>
         
@@ -127,7 +127,18 @@
         }
       },
       methods: {
-        
+        closeRightDrawer() {
+          var rightDrawer, rightDrawerInner;
+          rightDrawer = document.getElementById('rightDrawer');
+          rightDrawerInner = rightDrawer.children[0];
+          console.log(rightDrawerInner)
+          rightDrawerInner.classList.add('drawer-hide');
+          setTimeout(()=>{
+              rightDrawerInner.classList.remove('drawer-hide');
+              rightDrawer.classList.remove('show');
+
+          }, 300)
+          }
       },
       computed: {
   
@@ -152,5 +163,8 @@ main {
 }
 [class*="fa-"]{
     color: var(--light);
+ }
+ .icon-close.rounded {
+  display: flex;justify-content: center;align-items: center;
  }
 </style>
