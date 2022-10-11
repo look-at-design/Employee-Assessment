@@ -13,11 +13,11 @@ import { faBuilding, faComment, faUser, } from '@fortawesome/free-regular-svg-ic
 const router = createRouter( {
     history: createWebHistory(),
     routes: [
-       {path: '/home', name: 'Home', component: import('./components/home.vue'),
+       {path: '/Employee-Assessment', name: 'Home', component: import('./components/home.vue'),
         children: [
-            {path: '/home/individual', name: 'Individual', component: import('./components/individual.vue')},
-            {path: '/home/team', name: 'Team', component: import('./components/team.vue')},
-            {path: '/home/company', name: 'Company', component: import('./components/company.vue')},
+            {path: '/Employee-Assessment/individual', name: 'Individual', component: import('./components/individual.vue')},
+            {path: '/Employee-Assessment/team', name: 'Team', component: import('./components/team.vue')},
+            {path: '/Employee-Assessment/company', name: 'Company', component: import('./components/company.vue')},
         ]    
     },
        {path: '/reviews', name: 'Review', component: import('./components/reviews.vue')},
