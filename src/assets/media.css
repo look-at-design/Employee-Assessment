@@ -1,4 +1,17 @@
 @media (max-width: 768px) {
+  .left-section {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 4;
+    width: 85% !important;
+    max-width: 26rem !important;
+    background: var(--light);
+    height: 100% !important;
+    border-radius: 2rem;
+    box-shadow: 60px 0px 0px rgb(77 76 77 / 50%) !important;
+}
+
   .tab-menu a {
     padding: 1rem;
 }

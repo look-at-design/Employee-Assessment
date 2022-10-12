@@ -536,7 +536,7 @@ header {
     color: var(--dark);
   }
   
-  .select-field::after {
+  /* .select-field::after {
     content: '';
     display: block;
     background: transparent;
@@ -548,7 +548,7 @@ header {
     position: absolute;
     right: 1.5rem;
     top: 2rem;
-  }
+  } */
   
   select::-ms-expand {
     display: none;
@@ -624,7 +624,8 @@ header {
     background: var(--light);
     z-index: 1;
     box-shadow: 0 1px 1px 0 rgb(0 0 0 / 2%), 0 38px 39px 0 rgb(0 0 0 / 13%);
-    top: 5.2rem;
+    top: 3.5rem;
+    text-align: left;
   }
   
   .search-group {

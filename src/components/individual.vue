@@ -83,7 +83,7 @@
                     @click="toggleFilter()"
                     id="filterButton"
                   >
-                    Select option
+                    Select option <fa :icon="['fas', 'angle-down']" />
                   </button>
                   <ul id="dataSelect">
                     <div class="search-group">
@@ -174,8 +174,19 @@ export default {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-flow: wrap;
+}
+.filter-button {
+  gap: 1.5rem;
+    min-height: fit-content;
+    line-height: 2;
+    justify-content: space-between;
 }
 .rs-chips .fa-xmark {
   font-size: 1.15rem;
+}
+.select-filter {
+  margin-bottom: 0;
+  min-width: 23rem;
 }
 </style>
