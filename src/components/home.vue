@@ -2,11 +2,14 @@
     <section class="home">
         <div class="left-section">
             <router-link to="/">
-                <fa :icon="['far', 'user']" /> individual</router-link>
+                <fa :icon="['far', 'user']" /> individual
+            </router-link>
             <router-link to="/home/team">
-                <fa :icon="['fas', 'people-group']" /> team</router-link>
+                <fa :icon="['fas', 'people-group']" /> team
+            </router-link>
             <router-link to="/home/company">
-                <fa :icon="['far', 'building']" /> company</router-link>
+                <fa :icon="['far', 'building']" /> company
+            </router-link>
         </div>
         <div class="right-section">
             <router-view />

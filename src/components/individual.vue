@@ -1,19 +1,17 @@
 <template>
-
   <section class="individual">
     <div class="rs-container">
       <div class="rs-row">
         <div class="rs-col-12">
-
           <div class="rs-card">
             <div class="rs-card-head">
               <div class="heading-medium">your objective</div>
               <div class="bg-primary text-light new-group">
-                <fa :icon="['fas', 'plus']" style="font-size: 1.15rem"/>  New group
+                <fa :icon="['fas', 'plus']" style="font-size: 1.15rem" /> New
+                group
               </div>
             </div>
             <div class="rs-card-body">
-            
               <div class="d-grid-4">
                 <span class="points">
                   <div class="heading-display-large">3</div>
@@ -31,7 +29,6 @@
                   <div class="heading-display-large">1</div>
                   <p>due in 30 days</p>
                 </span>
-
               </div>
             </div>
             <!-- <div class="rs-card-footer">
@@ -45,7 +42,6 @@
       </div>
       <div class="rs-row">
         <div class="rs-col-12">
-
           <div class="rs-card">
             <!-- <div class="rs-card-head">
               <div class="heading-medium">your objective</div>
@@ -54,7 +50,6 @@
               </div>
             </div> -->
             <div class="rs-card-body">
-            
               <div class="space-between-flex">
                 <div class="chip-group">
                   <div class="rs-chips-group">
@@ -82,14 +77,25 @@
                     </div>
                   </div>
                 </div>
-                <div class="input-field select-filter select-field" >
-                  <button class="button-block filter-button" @click="toggleFilter()" id="filterButton">Select option</button>
+                <div class="input-field select-filter select-field">
+                  <button
+                    class="button-block filter-button"
+                    @click="toggleFilter()"
+                    id="filterButton"
+                  >
+                    Select option
+                  </button>
                   <ul id="dataSelect">
                     <div class="search-group">
-                      <svg class="icon icon-search" width="24" height="24" viewBox="0 0 256 256">
+                      <svg
+                        class="icon icon-search"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 256 256"
+                      >
                         <use xlink:href="#rsIconSearch"></use>
                       </svg>
-                      <input type="text" required="" id="filterValue">
+                      <input type="text" required="" id="filterValue" />
                     </div>
                     <li>Adambakkam</li>
                     <li>villivakkam</li>
@@ -113,59 +119,47 @@
       </div>
     </div>
   </section>
-
 </template>
 
 <script>
-
-  export default  {
-    name: 'individual',
-    props: [],
-    mounted () {
-
-    },
-    data () {
-      return {
-
+export default {
+  name: "individual",
+  props: [],
+  mounted() {},
+  data() {
+    return {};
+  },
+  methods: {
+    toggleFilter() {
+      var buttontFilter, selectFilter, selectFilterText;
+      buttontFilter = document.getElementById("filterButton");
+      selectFilter = document.getElementById("dataSelect");
+      if (selectFilter) {
+        selectFilterText = selectFilter.children;
+        buttontFilter.addEventListener("click", () => {
+          if (selectFilter.style.display == "block") {
+            selectFilter.style.display = "none";
+          } else {
+            selectFilter.style.display = "block";
+          }
+        });
       }
     },
-    methods: {
-      toggleFilter() {
-        var buttontFilter, selectFilter, selectFilterText;
-buttontFilter = document.getElementById('filterButton');
-selectFilter = document.getElementById('dataSelect');
-if (selectFilter) {
-    selectFilterText = selectFilter.children;
-    buttontFilter.addEventListener('click', () => {
-        if (selectFilter.style.display == 'block') {
-            selectFilter.style.display = 'none'
-        } else {
-            selectFilter.style.display = 'block';
-        }
-
-    });
-}
-
-      }
-    },
-    computed: {
-
-    }
-}
-
-
+  },
+  computed: {},
+};
 </script>
 
 <style scoped>
-  .absolute-top-right {
-    position: absolute;
-    top: 0;
-    right: 0;
-  }
+.absolute-top-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
 .new-group {
   padding: 0.75rem;
   border-radius: 0.5rem;
-} 
+}
 .points p {
   text-transform: capitalize;
 }
@@ -177,7 +171,8 @@ if (selectFilter) {
   font-weight: 200;
 }
 .space-between-flex {
-  display: flex;justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 .rs-chips .fa-xmark {
