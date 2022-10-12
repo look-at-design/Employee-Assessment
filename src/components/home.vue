@@ -10,6 +10,7 @@
             <router-link to="/home/company">
                 <fa :icon="['far', 'building']" /> company
             </router-link>
+            <fa :icon="['fas', 'circle-xmark']" class="close-drawer"/>
         </div>
         <div class="right-section">
             <router-view />
@@ -78,5 +79,14 @@ export default {
 .left-section a [class*='fa'] {
     width: 2rem;
     margin-right: 1rem;
+}
+.close-drawer{
+    position: fixed;
+    right: 1rem;
+    bottom: 2.5rem;
+    font-size: 3rem;
+    color: var(--primary);
+    cursor: pointer;
+    left: 23rem;
 }
 </style>

@@ -1,8 +1,8 @@
 @media (max-width: 768px) {
   .left-section {
     position: absolute;
-    left: 0;
-    top: 0;
+    left: -0.5rem;
+    top: 0rem;
     z-index: 4;
     width: 85% !important;
     max-width: 26rem !important;
@@ -10,8 +10,11 @@
     height: 100% !important;
     border-radius: 2rem;
     box-shadow: 60px 0px 0px rgb(77 76 77 / 50%) !important;
+    padding-right: 0 !important;
 }
-
+.left-section::-webkit-scrollbar {
+  display: none;
+}
   .tab-menu a {
     padding: 1rem;
 }
@@ -147,6 +150,9 @@
 }
 
 @media (min-width: 769px) {
+  .close-drawer {
+    display: none;
+  }
   .tab-menu{
     gap: 4rem;
     justify-content: center;
