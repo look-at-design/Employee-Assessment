@@ -43,6 +43,74 @@
           </div>
         </div>
       </div>
+      <div class="rs-row">
+        <div class="rs-col-12">
+
+          <div class="rs-card">
+            <!-- <div class="rs-card-head">
+              <div class="heading-medium">your objective</div>
+              <div class="bg-primary text-light new-group">
+                <fa :icon="['fas', 'plus']" style="font-size: 1.15rem"/>  New group
+              </div>
+            </div> -->
+            <div class="rs-card-body">
+            
+              <div class="space-between-flex">
+                <div class="chip-group">
+                  <div class="rs-chips-group">
+                    <div class="rs-chips">Base</div>
+                    <div class="rs-chips fill">Base</div>
+                    <div class="rs-chips fill chip-remove chip-right">
+                      Base
+                      <fa :icon="['fas', 'close']" />
+                    </div>
+                    <div class="rs-chips fill chip-remove chip-right">
+                      Base
+                      <fa :icon="['fas', 'close']" />
+                    </div>
+                    <div class="rs-chips chip-remove">
+                      Base
+                      <fa :icon="['fas', 'close']" />
+                    </div>
+                    <div class="rs-chips chip-remove chip-dark">
+                      Base
+                      <fa :icon="['fas', 'close']" />
+                    </div>
+                    <div class="rs-chips chip-dark">
+                      Base
+                      <fa :icon="['fas', 'close']" />
+                    </div>
+                  </div>
+                </div>
+                <div class="input-field select-filter select-field" >
+                  <button class="button-block filter-button" @click="toggleFilter()" id="filterButton">Select option</button>
+                  <ul id="dataSelect">
+                    <div class="search-group">
+                      <svg class="icon icon-search" width="24" height="24" viewBox="0 0 256 256">
+                        <use xlink:href="#rsIconSearch"></use>
+                      </svg>
+                      <input type="text" required="" id="filterValue">
+                    </div>
+                    <li>Adambakkam</li>
+                    <li>villivakkam</li>
+                    <li>anna nagar</li>
+                    <li>guindy</li>
+                    <li>besant nagar</li>
+                    <li>velachery</li>
+                    <li>baby nagar</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="rs-card-footer">
+              <div class="button-group">
+                <button class="button-gray button-block">save</button>
+                <button class="button-dark button-block">cancel</button>
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -62,7 +130,23 @@
       }
     },
     methods: {
+      toggleFilter() {
+        var buttontFilter, selectFilter, selectFilterText;
+buttontFilter = document.getElementById('filterButton');
+selectFilter = document.getElementById('dataSelect');
+if (selectFilter) {
+    selectFilterText = selectFilter.children;
+    buttontFilter.addEventListener('click', () => {
+        if (selectFilter.style.display == 'block') {
+            selectFilter.style.display = 'none'
+        } else {
+            selectFilter.style.display = 'block';
+        }
 
+    });
+}
+
+      }
     },
     computed: {
 
@@ -91,5 +175,12 @@
 }
 .points .heading-display-large {
   font-weight: 200;
+}
+.space-between-flex {
+  display: flex;justify-content: space-between;
+  align-items: center;
+}
+.rs-chips .fa-xmark {
+  font-size: 1.15rem;
 }
 </style>

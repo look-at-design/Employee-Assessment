@@ -6,6 +6,15 @@ import { faAngleDown, faBullseye, faClose, faPeopleGroup, faPlus, faRotateRight 
 import { faYoutube, faGithub } from '@fortawesome/free-brands-svg-icons'
 import App from './App.vue'
 
+// component imports
+import  Home from './components/home.vue'
+import  Individual from './components/individual.vue'
+import  Team from './components/team.vue'
+import  Company  from './components/company.vue'
+import  Reviews from './components/reviews.vue'
+import  Feedback from './components/feedback.vue'
+import  NotFound from './components/notfound.vue'
+
 
 import './assets/main.css'
 import { faBuilding, faComment, faUser, } from '@fortawesome/free-regular-svg-icons'
@@ -13,15 +22,16 @@ import { faBuilding, faComment, faUser, } from '@fortawesome/free-regular-svg-ic
 const router = createRouter( {
     history: createWebHistory(),
     routes: [
-       {path: '/home', name: 'Home', component: import('./components/home.vue'),
+        { path: '/:catchAll(.*)', component: NotFound },
+       {path: '/home', name: 'Home', component: Home,
         children: [
-            {path: '/', name: 'Individual', component: import('./components/individual.vue')},
-            {path: '/home/team', name: 'Team', component: import('./components/team.vue')},
-            {path: '/home/company', name: 'Company', component: import('./components/company.vue')},
+            {path: '/', name: 'Individual', component: Individual},
+            {path: '/home/team', name: 'Team', component: Team },
+            {path: '/home/company', name: 'Company', component: Company },
         ]    
     },
-       {path: '/reviews', name: 'Review', component: import('./components/reviews.vue')},
-       {path: '/feedback', name: 'Feedback', component: import('./components/feedback.vue')},
+       {path: '/reviews', name: 'Review', component: Reviews},
+       {path: '/feedback', name: 'Feedback', component: Feedback },
        
     ]
 })

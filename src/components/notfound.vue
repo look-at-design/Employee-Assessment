@@ -1,7 +1,7 @@
 <template>
 
-  <section class="company">
-    <h1>company Component</h1>
+  <section class="notfound">
+    <h1>notfound Component</h1>
   </section>
 
 </template>
@@ -9,7 +9,7 @@
 <script>
 
   export default  {
-    name: 'Company',
+    name: 'notfound',
     props: [],
     mounted () {
 
@@ -31,7 +31,7 @@
 </script>
 
 <style scoped>
-  .company {
+  .notfound {
 
   }
 </style>

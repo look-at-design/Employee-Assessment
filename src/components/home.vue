@@ -11,13 +11,12 @@
         <div class="right-section">
             <router-view />
         </div>
-    
     </section>
 </template>
 
 <script>
 export default {
-    name: 'home',
+    name: 'Home',
     props: [],
     mounted() {
 
