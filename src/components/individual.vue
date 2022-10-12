@@ -17,29 +17,29 @@
               <div class="d-grid-4">
                 <span class="points">
                   <div class="heading-display-large">3</div>
-                  <p>goals</p>
+                  <p>active goals</p>
                 </span>
                 <span class="points">
-                  <div class="heading-display-large">3</div>
-                  <p>goals</p>
+                  <div class="heading-display-large">20%</div>
+                  <p>progress</p>
                 </span>
                 <span class="points">
-                  <div class="heading-display-large">3</div>
-                  <p>goals</p>
+                  <div class="heading-display-large">16</div>
+                  <p>completed</p>
                 </span>
                 <span class="points">
-                  <div class="heading-display-large">3</div>
-                  <p>goals</p>
+                  <div class="heading-display-large">1</div>
+                  <p>due in 30 days</p>
                 </span>
 
               </div>
             </div>
-            <div class="rs-card-footer">
+            <!-- <div class="rs-card-footer">
               <div class="button-group">
                 <button class="button-gray button-block">save</button>
                 <button class="button-dark button-block">cancel</button>
               </div>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
@@ -84,10 +84,12 @@
 } 
 .points p {
   text-transform: capitalize;
-  font-size: 1.4rem;
 }
 .points:not(last-child) {
   border-right: 0.1rem solid var(--border);
   text-align: left;
+}
+.points .heading-display-large {
+  font-weight: 200;
 }
 </style>
