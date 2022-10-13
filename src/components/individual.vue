@@ -76,6 +76,7 @@
           <div class="rs-card">
             <div class="rs-card-body">
               <div class="space-between-flex">
+                <h1>employee metrics</h1>
                 <div class="input-field select-filter select-field">
                   <button
                     class="button-block filter-button"
@@ -104,6 +105,36 @@
                     <li>velachery</li>
                     <li>baby nagar</li>
                   </ul>
+                </div>
+              </div>
+              <div class="data-points">
+                <div class="icon-chamber">
+                  <fa :icon="['fas', 'walkie-talkie']" />
+                </div>
+                <div class="points-chamber">
+                  <p>communication</p>
+                  <div class="progress-bar-group">
+                    <div class="progress-bar excellent">
+                      <progress id="excellent" value="80" max="100"></progress>
+                      <div class="progress-bar-title">80%</div>
+                    </div>
+                      
+                  </div>
+                </div>
+              </div>
+              <div class="data-points">
+                <div class="icon-chamber">
+                  <fa :icon="['fas', 'walkie-talkie']" />
+                </div>
+                <div class="points-chamber">
+                  <p>communication</p>
+                  <div class="progress-bar-group">
+                    <div class="progress-bar excellent">
+                      <progress id="excellent" value="80" max="100"></progress>
+                      <div class="progress-bar-title">80%</div>
+                    </div>
+                      
+                  </div>
                 </div>
               </div>
               <div class="data-points">
@@ -233,7 +264,6 @@ export default {
 .points-chamber p {
     text-transform: capitalize;
     font-size: 2rem;
-    font-weight: 600;
     text-align: left;
     margin-bottom: 1.5rem;
 }
