@@ -2,14 +2,14 @@
   <section class="individual">
     <div class="rs-container">
       <div class="rs-row">
-        <div class="rs-col-12">
+        <div class="rs-col-6">
           <div class="rs-card">
             <div class="rs-card-head">
               <div class="heading-medium">your objective</div>
-              <div class="bg-primary text-light new-group">
+              <button class="bg-primary text-light new-group">
                 <fa :icon="['fas', 'plus']" style="font-size: 1.15rem" /> New
                 group
-              </div>
+              </button>
             </div>
             <div class="rs-card-body">
               <div class="d-grid-4">
@@ -39,16 +39,42 @@
             </div> -->
           </div>
         </div>
+        <div class="rs-col-6">
+          <div class="rs-card">
+            <div class="rs-card-body">
+              <div class="chip-group">
+                <div class="rs-chips-group">
+                  <div class="rs-chips">Base</div>
+                  <div class="rs-chips fill">Base</div>
+                  <div class="rs-chips fill chip-remove chip-right">
+                    Base
+                    <fa :icon="['fas', 'close']" />
+                  </div>
+                  <div class="rs-chips fill chip-remove chip-right">
+                    Base
+                    <fa :icon="['fas', 'close']" />
+                  </div>
+                  <div class="rs-chips chip-remove">
+                    Base
+                    <fa :icon="['fas', 'close']" />
+                  </div>
+                  <div class="rs-chips chip-remove chip-dark">
+                    Base
+                    <fa :icon="['fas', 'close']" />
+                  </div>
+                  <div class="rs-chips chip-dark">
+                    Base
+                    <fa :icon="['fas', 'close']" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="rs-row">
         <div class="rs-col-12">
           <div class="rs-card">
-            <!-- <div class="rs-card-head">
-              <div class="heading-medium">your objective</div>
-              <div class="bg-primary text-light new-group">
-                <fa :icon="['fas', 'plus']" style="font-size: 1.15rem"/>  New group
-              </div>
-            </div> -->
             <div class="rs-card-body">
               <div class="space-between-flex">
                 <div class="chip-group">
@@ -157,8 +183,8 @@ export default {
   right: 0;
 }
 .new-group {
-  padding: 0.75rem;
-  border-radius: 0.5rem;
+  min-height: 3rem;
+    line-height: 3rem;
 }
 .points p {
   text-transform: capitalize;

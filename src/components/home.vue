@@ -46,7 +46,7 @@ export default {
 }
 
 .left-section {
-    width: 20%;
+   flex: 0 auto;
     max-width: 300px;
     height: calc(100vh - 13.5rem);
     overflow: auto;
@@ -72,7 +72,7 @@ export default {
 }
 
 .right-section {
-    width: 80%;
+    flex:1 auto;
     padding: 1.5rem;
 }
 
