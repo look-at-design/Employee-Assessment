@@ -112,6 +112,13 @@
                 </div>
                 <div class="points-chamber">
                   <p>communication</p>
+                  <div class="progress-bar-group">
+                    <div class="progress-bar excellent">
+                      <progress id="excellent" value="80" max="100"></progress>
+                      <div class="progress-bar-title">80%</div>
+                    </div>
+                      
+                  </div>
                 </div>
               </div>
             </div>
@@ -218,12 +225,16 @@ export default {
     width: 3rem;
     height: 3rem;
     border-radius: 100%;
-    color: var(--success);
+    color: var(--light);
+}
+.points-chamber {
+  padding-left: 2rem;
 }
 .points-chamber p {
     text-transform: capitalize;
-    margin-left: 3rem;
     font-size: 2rem;
     font-weight: 600;
+    text-align: left;
+    margin-bottom: 1.5rem;
 }
 </style>

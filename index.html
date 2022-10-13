@@ -14,6 +14,34 @@
       background: var(--light);
       overflow: hidden;
     }
+
+    .progress-bar progress,
+    .progress-bar progress[value]::-webkit-progress-value {
+      border-radius: 0.8rem;
+    }
+
+    .progress-bar progress,
+    .progress-bar progress[value]::-webkit-progress-bar {
+      background-color: #EDEDED;
+      border-radius: 0.8rem;
+      border: none !important;
+      height: 1rem;
+      width: 30rem;
+    }
+
+    .progress-bar {
+      display: flex;
+      align-items: center;
+    }
+
+    .progress-bar-title {
+      min-width: 14rem;
+      text-transform: capitalize;
+    }
+
+    .progress-bar.excellent progress[value]::-webkit-progress-value {
+      background: var(--secondary);
+    }
   </style>
 </head>
 

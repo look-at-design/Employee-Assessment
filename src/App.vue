@@ -165,4 +165,5 @@ main {
  .icon-close.rounded {
   display: flex;justify-content: center;align-items: center;
  }
+
 </style>
