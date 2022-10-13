@@ -157,8 +157,7 @@ main {
     min-height: 200px;
     background: var(--light);
     overflow-y: auto;
-    padding: 1.5rem;
-    height: calc(100vh - 10.5rem);
+    height: calc(100vh - 10.4rem);
 }
 [class*="fa-"]{
     color: var(--light);

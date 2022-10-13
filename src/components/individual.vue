@@ -6,8 +6,8 @@
           <div class="rs-card">
             <div class="rs-card-head">
               <div class="heading-medium">your objective</div>
-              <button class="bg-primary text-light new-group">
-                <fa :icon="['fas', 'plus']" style="font-size: 1.15rem" /> New
+              <button class="bg-secondary text-light new-group">
+                <fa :icon="['fas', 'plus']" /> New
                 group
               </button>
             </div>
@@ -46,19 +46,19 @@
                 <div class="rs-chips-group">
                   <div class="rs-chips">Base</div>
                   <div class="rs-chips fill">Base</div>
-                  <div class="rs-chips fill chip-remove chip-right">
+                  <div class="rs-chips fill  chip-right">
                     Base
                     <fa :icon="['fas', 'close']" />
                   </div>
-                  <div class="rs-chips fill chip-remove chip-right">
+                  <div class="rs-chips fill  chip-right">
                     Base
                     <fa :icon="['fas', 'close']" />
                   </div>
-                  <div class="rs-chips chip-remove">
+                  <div class="rs-chips ">
                     Base
                     <fa :icon="['fas', 'close']" />
                   </div>
-                  <div class="rs-chips chip-remove chip-dark">
+                  <div class="rs-chips  chip-dark">
                     Base
                     <fa :icon="['fas', 'close']" />
                   </div>
@@ -77,32 +77,6 @@
           <div class="rs-card">
             <div class="rs-card-body">
               <div class="space-between-flex">
-                <div class="chip-group">
-                  <div class="rs-chips-group">
-                    <div class="rs-chips">Base</div>
-                    <div class="rs-chips fill">Base</div>
-                    <div class="rs-chips fill chip-remove chip-right">
-                      Base
-                      <fa :icon="['fas', 'close']" />
-                    </div>
-                    <div class="rs-chips fill chip-remove chip-right">
-                      Base
-                      <fa :icon="['fas', 'close']" />
-                    </div>
-                    <div class="rs-chips chip-remove">
-                      Base
-                      <fa :icon="['fas', 'close']" />
-                    </div>
-                    <div class="rs-chips chip-remove chip-dark">
-                      Base
-                      <fa :icon="['fas', 'close']" />
-                    </div>
-                    <div class="rs-chips chip-dark">
-                      Base
-                      <fa :icon="['fas', 'close']" />
-                    </div>
-                  </div>
-                </div>
                 <div class="input-field select-filter select-field">
                   <button
                     class="button-block filter-button"
@@ -182,16 +156,25 @@ export default {
   top: 0;
   right: 0;
 }
+.points {
+  padding: 1.5rem;
+}
 .new-group {
   min-height: 3rem;
     line-height: 3rem;
+    gap: 1rem;
+}
+.new-group .fa-plus {
+  font-size: 1.3rem;
 }
 .points p {
   text-transform: capitalize;
 }
-.points:not(last-child) {
-  border-right: 0.1rem solid var(--border);
-  text-align: left;
+.points:nth-child(2n-1) {
+  border-right: 0.15rem solid var(--border);
+}
+.points:nth-child(-n+2) {
+  border-bottom: 0.15rem solid var(--border);
 }
 .points .heading-display-large {
   font-weight: 200;

@@ -46,12 +46,12 @@ export default {
 }
 
 .left-section {
-   flex: 0 auto;
-    max-width: 300px;
-    height: calc(100vh - 13.5rem);
+    flex: 0 auto;
+    min-width: 300px;
+    height: calc(100vh - 10.4rem);
     overflow: auto;
     border-right: 0.1rem solid var(--border);
-    padding-right: 1.5rem;
+    padding: 1.5rem;
 }
 
 .left-section a {
