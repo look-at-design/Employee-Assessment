@@ -149,6 +149,9 @@
 }
 
 @media (min-width: 769px) {
+  body {
+    padding: 8rem !important;
+  }
   .close-drawer {
     display: none;
   }

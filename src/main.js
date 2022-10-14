@@ -2,7 +2,9 @@ import { createApp } from 'vue'
 import { createRouter, createWebHistory } from 'vue-router'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faAngleDown, faBullseye, faCircleXmark, faClose, faPeopleGroup, faPlus, faRotateRight, faWalkieTalkie } from '@fortawesome/free-solid-svg-icons'
+import { faAngleDown, faBullseye, faCircleXmark, faClose, faFillDrip, 
+    faFilter, 
+    faIceCream, faPeopleGroup, faPlus, faRotateRight, faSearch, faWalkieTalkie } from '@fortawesome/free-solid-svg-icons'
 import { faYoutube, faGithub } from '@fortawesome/free-brands-svg-icons'
 import App from './App.vue'
 
@@ -37,7 +39,10 @@ const router = createRouter({
     ]
 })
 
-library.add(faAngleDown, faYoutube, faGithub, faBullseye, faComment, faRotateRight, faUser, faPeopleGroup, faBuilding, faClose, faPlus, faCircleXmark, faWalkieTalkie)
+library.add(faAngleDown, faYoutube, faGithub, faBullseye, 
+    faComment, faRotateRight, faUser, faPeopleGroup, faBuilding, 
+    faClose, faPlus, faCircleXmark, faWalkieTalkie, faIceCream,
+    faFillDrip,faFilter,faSearch)
 createApp(App).use(router).component('fa', FontAwesomeIcon).mount('#app')
 
 export default router

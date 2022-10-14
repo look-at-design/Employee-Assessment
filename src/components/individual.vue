@@ -78,23 +78,14 @@
               <div class="space-between-flex">
                 <h1>employee metrics</h1>
                 <div class="input-field select-filter select-field">
-                  <button
-                    class="button-block filter-button"
-                    @click="toggleFilter()"
-                    id="filterButton"
-                  >
-                    Select option <fa :icon="['fas', 'angle-down']" />
+                  <button class="button-block filter-button" @click="toggleFilter()" id="filterButton" >
+                  <span><fa :icon="['fas', 'filter']" /> Filter</span> <fa :icon="['fas', 'angle-down']" />
                   </button>
                   <ul id="dataSelect">
                     <div class="search-group">
-                      <svg
-                        class="icon icon-search"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 256 256"
-                      >
-                        <use xlink:href="#rsIconSearch"></use>
-                      </svg>
+                      <div class="icon icon-search">
+                        <fa :icon="['fas', 'search']" /> 
+                      </div>
                       <input type="text" required="" id="filterValue" />
                     </div>
                     <li>Adambakkam</li>
@@ -115,40 +106,37 @@
                   <p>communication</p>
                   <div class="progress-bar-group">
                     <div class="progress-bar excellent">
-                      <progress id="excellent" value="80" max="100"></progress>
-                      <div class="progress-bar-title">80%</div>
+                      <progress id="excellent" value="60" max="100"></progress>
+                      <div class="progress-bar-title">60%</div>
                     </div>
-                      
                   </div>
                 </div>
               </div>
               <div class="data-points">
                 <div class="icon-chamber">
-                  <fa :icon="['fas', 'walkie-talkie']" />
+                  <fa :icon="['fas', 'ice-cream']" />
                 </div>
                 <div class="points-chamber">
                   <p>communication</p>
                   <div class="progress-bar-group">
                     <div class="progress-bar excellent">
-                      <progress id="excellent" value="80" max="100"></progress>
-                      <div class="progress-bar-title">80%</div>
+                      <progress id="excellent" value="50" max="100"></progress>
+                      <div class="progress-bar-title">50%</div>
                     </div>
-                      
                   </div>
                 </div>
               </div>
               <div class="data-points">
                 <div class="icon-chamber">
-                  <fa :icon="['fas', 'walkie-talkie']" />
+                  <fa :icon="['fas', 'fill-drip']" />
                 </div>
                 <div class="points-chamber">
                   <p>communication</p>
                   <div class="progress-bar-group">
                     <div class="progress-bar excellent">
-                      <progress id="excellent" value="80" max="100"></progress>
-                      <div class="progress-bar-title">80%</div>
+                      <progress id="excellent" value="90" max="100"></progress>
+                      <div class="progress-bar-title">90%</div>
                     </div>
-                      
                   </div>
                 </div>
               </div>
@@ -235,8 +223,6 @@ export default {
   min-height: fit-content;
   line-height: 2;
   justify-content: space-between;
-  border-radius: 0.5rem;
-  color: var(--secondary);
 }
 .rs-chips .fa-xmark {
   font-size: 1.15rem;

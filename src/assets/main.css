@@ -61,6 +61,7 @@ body {
   padding: 1.5rem;
   /* color: var(--text); */
   background: var(--bg1);
+
 }
 
 * {
@@ -463,13 +464,10 @@ footer p::before {
 /* +*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+ */
 /* +*+*+*+*+*+*+*+*+*+* TEXT FILED +*+*+*+*+*+*+*+*+*+*+*+*+ */
 /* +*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+ */
-input[type="text"],
-input[type="email"],
-input[type="password"],
-select {
-  min-height: 4.5rem;
+input[type="text"], input[type="email"], input[type="password"], select {
+  min-height: 3.5rem;
   border-radius: 0rem;
-  padding: 1.5rem;
+  padding: 1rem;
   font-size: 100%;
   outline: 0;
   border: 0.15rem solid var(--border);
@@ -636,7 +634,7 @@ select::-ms-expand {
 }
 
 .select-filter ul {
-  border: 0.1rem solid var(--secondary);
+  border: 0.1rem solid var(--border);
   border-top: 0;
   max-height: 30rem;
   overflow: auto;
@@ -675,7 +673,7 @@ select::-ms-expand {
 }
 
 .filter-button {
-  border: 0.1rem solid var(--secondary);
+  border: 0.1rem solid var(--border);
   border-radius: 0rem;
   text-align: left;
   box-shadow: none;

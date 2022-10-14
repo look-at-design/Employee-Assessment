@@ -47,7 +47,7 @@ export default {
 
 .left-section {
     flex: 0 auto;
-    min-width: 300px;
+    min-width: 30rem;
     height: calc(100vh - 10.4rem);
     overflow: auto;
     border-right: 0.1rem solid var(--border);
@@ -72,10 +72,12 @@ export default {
 }
 
 .right-section {
-    flex:1 auto;
+    flex: 1 auto;
     padding: 1.5rem;
+    width: calc(100% - 30rem);
+    height: calc(100vh - 23rem);
+    overflow: auto;
 }
-
 .left-section a [class*='fa'] {
     width: 2rem;
     margin-right: 1rem;
